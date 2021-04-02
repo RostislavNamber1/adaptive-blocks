@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* Безопасные шрифты
+font-family: "Arial";
+font-family: "Times New Roman";
+font-family: "Courier New";
+font-family: "Courier";
+font-family: "Verdana";
+font-family: "Georgia";
+font-family: "Palatino";
+font-family: "Garamond";
+font-family: "Bookman";
+font-family: "Tahoma";
+font-family: "Trebuchet";
+font-family: "Arial Black";
+font-family: "Impact";
+font-family: "Comic Sans MS";
+ */
+/* резет команды */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* сокращенный сброс настроек кнопок во всех браузерах */
+body{
+  /* плавный скрол */
+  scroll-behavior: smooth;
+  font-family: "Arial";
+}
+/* центрирование  */
+header,
+.text,
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+/* центрирование  */
+header{
+  min-height: 150px;
+  background-color: #5093f9;
+  flex-flow: column;
+}
+h1{
+  font-size: 3rem;
+  color: #4a4a4a;
+  text-shadow: 41px 43px 0px #ffffff;
+}
+h2{
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+p{
+  font-size: 1.5rem;
+  padding: .5em;
+  background-color: #717171;
+  border-radius: 10px;
+}
+section{
+  width: 50%;
+  background-color: #292929;
+  border-radius: 10px;
+  color:#ffffff;
+  padding: 2% 2%;
+  margin: 2% 0;
+}
+.bloks{
+  background-color: #f16969;
+  width: 50%;
+  height: 300px;
+  padding: 2%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 2%;
+}
+.item{
+  height: 100px;
+  flex: 0 0 300px;
+  background-color: rgb(0, 176, 134);
+  border: 1px solid #000000;
+  padding: 2%;
+}
+/* .animation{
+  animation: flex 10s infinite ease-in-out;
+}
+@keyframes flex {
+  0%{
+    width: 50%;
+
+  }
+  50%{
+    width: 20%;
+    height: 600px;
+  }
+  100%{
+    width: 50%;
+  }
+} */
+.cod{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #4a4a4a;
+  margin: 2%;
+  padding: 2%;
+}

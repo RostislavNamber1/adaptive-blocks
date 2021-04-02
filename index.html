@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <!-- втавь код для быстрой загрузки шрифтов &display=swap -->
+    <!-- кодировка страницы сайта -->
+    <meta charset="utf-8">
+    <!-- для адаптива страниц -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- автор -->
+    <meta name="author" content="Дащенко Ростислав Русланович">
+    <!-- описание сайта -->
+    <meta name="description" content="описане сайта">
+    <!-- ключи для страницы -->
+    <meta name="keywords" content="ключи для страниц">
+    <!-- для индексации поскового робота -->
+    <meta name="robots" content="index, follow">
+    <!-- подключение стилей -->
+    <link rel="stylesheet" href="css\style.css">
+    <!-- подключение js после загрузки страницы-->
+    <script defer src="js.js"></script>
+    <!-- Скрипт будет выполнен асинхронно с HTML страницей -->
+    <!-- <script async src="js.js"></script> -->
+    <title>Адаптивные блоки</title>
+
+  </head>
+  <body>
+    <header>
+      <h1>Адаптивные блоки / Adaptive blocks</h1>
+    </header>
+
+    <main>
+<!-- 111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <!--  Секция для текста -->
+      <section class="text">
+        <h2>Адаптивный саморасширяемый блок min</h2><br>
+        <p>min значение даёт возможность задать минимальные значения для блока</p>
+      </section>
+      <!--  Секция для текста -->
+      <!-- демонстрация блока -->
+      <div class="bloks">
+        min-width: 100px; <br>
+        min-height: 100px; </div>
+    <!-- демонстрация блока -->
+<!-- 222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+    <!--  Секция для текста -->
+      <section class="text">
+        <h2>Адаптивный саморасширяемый блок max</h2><br>
+        <p>max значение даёт возможность задать максимальное значения для блока.
+           Тем самым мы можем управлять блоком по граничению блока</p>
+      </section>
+      <!--  Секция для текста -->
+      <!-- демонстрация блока -->
+      <div class="bloks">
+        max-width: 100px; <br>
+        max-height: 100px; </div>
+    <!-- демонстрация блока -->
+<!-- 333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+<!--  Секция для текста -->
+  <section class="text">
+    <h2>Адаптивный саморасширяемый блок <br> display: flex</h2><br>
+    <p>Свойство flex удивидельное значение. Значение по умолчанию row.
+       Что даёт упорядочить блоки в линию.
+       Так же можно достичь адаптива и отказаться от медиа-запросов.
+       Измени размер дисплея и увидишь что происходит.</p>
+       <div class="cod">
+         <div class="cod-html">
+           <code>
+             <pre>
+&lt;div class="bloks"&gt;
+ &lt;div class="item"&gt;&lt;/div&gt;
+ &lt;div class="item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+             </pre>
+           </code>
+         </div>
+
+         <div class="cod-css">
+           <code>
+             <pre>
+.bloks{
+ background-color: #f16969;
+ width: 50%;
+ height: 300px;
+ padding: 2%;
+ font-size: 2rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-flow: row wrap;
+}
+.item{
+ height: 100px;
+ flex: 0 0 300px;
+ background-color: rgb(0, 176, 134);
+ border: 1px solid #000000;
+ padding: 2%;
+}
+             </pre>
+           </code>
+         </div>
+       </div>
+
+
+
+  </section>
+  <!--  Секция для текста -->
+  <!-- демонстрация блока -->
+  <div class="bloks">
+    <div class="item">
+      height: 100px <br>
+    width: 300px</div>
+    <div class="item">height: 100px <br>
+  width: 300px</div>
+  </div>
+<!-- демонстрация блока -->
+<div class="bloks">
+  <div class="item">
+    height: 100px <br>
+  width: 300px</div>
+  <div class="item">height: 100px <br>
+width: 300px</div>
+<div class="item">
+  height: 100px <br>
+width: 300px</div>
+<div class="item">height: 100px <br>
+width: 300px</div>
+</div>
+<!-- 444444444444444444444444444444444444444444444444444444444444444444444444444 -->
+    </main>
+  </body>
+</html>
