@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Безопасные шрифты
+font-family: "Arial";
+font-family: "Times New Roman";
+font-family: "Courier New";
+font-family: "Courier";
+font-family: "Verdana";
+font-family: "Georgia";
+font-family: "Palatino";
+font-family: "Garamond";
+font-family: "Bookman";
+font-family: "Tahoma";
+font-family: "Trebuchet";
+font-family: "Arial Black";
+font-family: "Impact";
+font-family: "Comic Sans MS";
+ */
+/* резет команды */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* сокращенный сброс настроек кнопок во всех браузерах */
+body{
+  /* плавный скрол */
+  scroll-behavior: smooth;
+  font-family: "Arial";
+  background-color: #343434;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+a > h2{
+  background:
+     linear-gradient(currentColor 0 0)
+     bottom /var(--d, 0) 3px
+     no-repeat;
+  transition:0.5s;
+}
+a h2:hover{
+  --d: 30%;
+}
+h2{
+  color: #ffffff;
+}
