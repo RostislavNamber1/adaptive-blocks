@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Безопасные шрифты
+font-family: "Arial";
+font-family: "Times New Roman";
+font-family: "Courier New";
+font-family: "Courier";
+font-family: "Verdana";
+font-family: "Georgia";
+font-family: "Palatino";
+font-family: "Garamond";
+font-family: "Bookman";
+font-family: "Tahoma";
+font-family: "Trebuchet";
+font-family: "Arial Black";
+font-family: "Impact";
+font-family: "Comic Sans MS";
+ */
+/* резет команды */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* сокращенный сброс настроек кнопок во всех браузерах */
+body{
+  /* плавный скрол */
+  scroll-behavior: smooth;
+  font-family: "Arial";
+  background-color: #343434;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+a > h2{
+  background:
+     linear-gradient(currentColor 0 0)
+     bottom /var(--d, 0) 3px
+     no-repeat;
+  transition:0.5s;
+}
+a h2:hover{
+  --d: 30%;
+}
+h2{
+  color: #ffffff;
+}
+/* 1111111111111111111111111111111111111111111111111111111111 */
+.header1, .logo1, .nav1, .ol1{
+  display: flex;
+}
+.header1{
+  min-height: 100px;
+  background-color: #3955b6;
+  justify-content: space-around;
+}
+.logo1{
+  width: 100px;
+  height: 100px;
+  background-color: #bababa;
+  justify-content: center;
+  align-items: center;
+}
+.nav1{
+  align-items: center;
+  background-color: rgba(13, 13, 13, 0.38);
+  max-width: 500px;
+}
+.ol1{
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.li1{
+  margin: 10px 10px;
+}
+.ol1 .li1 .a1{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+.ol1 .li1 .a1:hover{
+  color: #d23b9c;
+}
+/* 1111111111111111111111111111111111111111111111111111111111 */
+/* 2222222222222222222222222222222222222222222222222222222222 */
+.header2, .logo2, .nav2, .ol2{
+  display: flex;
+}
+.header2{
+  min-height: 100px;
+  background-color: #3955b6;
+  justify-content: center;
+}
+.logo2{
+  width: 100px;
+  height: 100px;
+  background-color: #bababa;
+  justify-content: center;
+  align-items: center;
+}
+.nav2{
+  align-items: center;
+  background-color: rgba(13, 13, 13, 0.38);
+}
+.ol2{
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.li2{
+  margin: 10px 10px;
+}
+.ol2 .li2 .a2{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+.ol2 .li2 .a2:hover{
+  color: #4e54e4;
+}
+/* 2222222222222222222222222222222222222222222222222222222222 */
