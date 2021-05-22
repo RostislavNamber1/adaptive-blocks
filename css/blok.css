@@ -34,6 +34,9 @@ body{
   font-family: "Arial";
   background-color: #343434;
 }
+header{
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 1);
+}
 a{
   text-decoration: none;
   color: #ffffff;
@@ -53,4 +56,55 @@ a h2:hover{
 }
 h2{
   color: #ffffff;
+}
+.blok{
+  margin: 3% auto;
+  padding: 2%;
+  background-color: #343434;
+  min-height: 100px;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 1px 13px rgb(0, 0, 0);
+  display: flex;
+  flex-flow: row nowrap;
+}
+.blok__img,
+.blok__code{
+  width: 50%;
+  min-height: 100%;
+}
+.blok-vivod1{
+  width: 100%;
+  min-height: 200px;
+  background-color: #343434;
+  border-radius: 20px;
+  padding: 2% 3%;
+  box-shadow: 0px 1px 13px rgb(0, 0, 0);
+}
+.buton-blok{
+  width: 30%;
+  height: 20%;
+  display: flex;
+  gap:.5em;
+}
+.buton-blok__circle{
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+._red{
+  background-color: rgb(254,95,87);
+}
+._yelow{
+  background-color: rgb(254,188,46);
+}
+._green{
+  background-color: rgb(38,200,63);
+}
+.blok-text{
+  width: 100%;
+  min-height: 100px;
+  color: rgb(255, 255, 255);
+  margin: 3% 0;
 }
